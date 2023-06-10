@@ -1,0 +1,516 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#sep-top img{
+    height: 15px;
+    display: block;
+    width: 100%;
+}
+header {
+    background-color: #000;
+    width: 100%;
+}
+header div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header div.container h3 {
+    color: #ffc603;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex; align-items: center;
+
+}
+header div.container h3 img {
+    height: 40px;
+    margin-right: 10px;
+}
+header div.container label {
+    color: #fff;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+header div.container nav {
+    width: 100%;
+    padding: 10px 0;
+}
+header div.container nav a {
+    color: #fff;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 0.95rem;
+    transition: .3s ease-in-out;
+}
+header div.container nav>a:hover {
+    padding-right: 5px;
+}
+header nav>a{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+header nav ul {
+	display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li {
+    list-style-type: none;
+}
+header nav ul li a{
+    width: 30px;
+	height: 30px;
+	border: thin solid #fff;
+	border-radius: 50%;
+	margin: 10px 8px 0;
+    display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+#menucontrol {
+	display: none;
+}
+#menucontrol+nav {
+	display:none;
+}
+#menucontrol:checked+nav {
+	display: block;
+}
+#sec-1 {
+    background: url("../images/sec1imgs/banner.jpg") no-repeat center center/100% , 100%;
+}
+#sec-1 .container article {
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+#sec-1 .container article h6 {
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+#sec-1 .container article h2 {
+    font-size: 2.6rem;
+}
+#sec-1 .container article h2 span {
+    display: block;
+    color: #cd8383;
+    margin-bottom: 10px;
+}
+#sec-1 .container article a , #sec-5 a , #sec-9 footer article ul li  button.btn{
+    display: inline-block;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    color: #000;
+    font-size: .7rem;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#sec-2 {
+    background-color: #000;
+}
+#sec-2 h3 {
+    padding-top: 30px;
+    color: #fdde6c;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+#sec-2 p {
+    color: #fff;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#sec-2 h2 {
+    background-image: url("../images/sec_8/sep.png");
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+#sec-3 div.container {
+    padding: 30px 0;
+}
+#sec-3 div.container h2 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#sec-3 div.container figure {
+    margin-bottom: 20px;
+    position: relative;
+}
+#sec-3 div.container figure img{
+    max-width: 100%;
+    display: block;
+    
+}
+#sec-3 div.container figure figcaption {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 15px;
+    text-align: justify;
+}
+#sec-3 div.container figure figcaption span {
+    text-transform: capitalize;
+    display: block;
+    color: #ffc603;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+#sec-3 div.container figure small {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:10px 15px;
+    color: #fff;
+    font-size: 1.9;
+    font-weight: 400;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+#sec-4 {
+    padding: 30px 0;
+    background-color: #000;
+}
+#sec-4 div.container h2 {
+    text-align: center;
+    color: #ffc603;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#sec-4 div.container figure img {
+    max-width: 100%;
+    margin-bottom: 20px;
+} 
+#sec-5{
+    background-image: url("../images/sec8/sep.png");
+    padding: 30px 0;
+    color: #fff;
+}
+#sec-5 div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#sec-5 small {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+#sec-6 {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+#sec-6 div.container header h2 {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 1.9rem;
+    font-weight: 200;
+}
+#sec-6 div.container header p {
+    text-align: justify;
+    font-size: .9rem;
+    margin-bottom: 30px;
+}
+#sec-6 div.container .cont img {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+#sec-6 div.container .cont aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#sec-6 div.container .cont aside article {
+    margin-bottom: 50px;
+    text-align: center;
+}
+#sec-6 div.container .cont aside article strong {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+}
+#sec-6 div.container .cont aside article span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+#sec-6 div.container .cont aside article p {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+    margin-top: 5px;
+}
+#sec-7 {
+    background-image:linear-gradient(rgba(1, 53, 66, 0.5) , rgba(1, 53, 66, 0.5)) , url("../images/sec7/contactus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 30px 0;
+    text-align: justify;
+}
+#sec-7 div.container article h1 {
+    color: #ffc603;
+    font-size: 2.6rem;
+}
+#sec-7 div.container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: rgba(1, 34, 48, 0);
+    border: 1px solid #ffc603;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px .1px  #ffc603;
+}
+#sec-7 div.container form input {
+    padding: 10px;
+    margin: 5px;
+    text-transform: capitalize;
+    outline: none;
+}
+#sec-7 div.container form input.submit {
+    background-color: #ffc603;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#sec-8{
+    background-image: url("../images/sec8/sep.png");
+    background-repeat: repeat-y;
+    max-width: 100%;
+    height: 5px;
+    margin-top: 2px;
+}
+#sec-9{
+    background-color: #000;
+    padding: 30px 0;
+}
+#sec-9 footer {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: .6rem;
+    font-weight: 250;
+    text-transform: capitalize;
+}
+#sec-9 footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+#sec-9 footer article ul li.email_footer {
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+#sec-9 footer article ul li button.btn {
+    color: #555453;
+    font-weight: 600;
+}
+#sec-9 footer article ul li img {
+    margin-left: 5px;
+    width: 40px;
+}
+#sec-9 footer article ul li.media {
+    display: flex;
+    justify-content: space-between;
+}
+#sec-9 footer article ul li.media ul.icon {
+    margin-right: 8px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+	.container {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    #sec-4 div.container .figs-sec-4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    #sec-3 div.container figure {
+		display: flex; 
+	}
+	#sec-3 div.container figure img {
+		width: 40%;
+	}
+	#sec-3 div.container figure figcaption{
+		padding: 20px;
+	}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.container {
+		width: 920px;
+	}
+    header div.container {
+		flex-wrap: nowrap;
+        justify-content: space-between;
+	}
+    header div.container h3 {
+        color: #ffc603;
+        text-transform: capitalize;
+        font-variant: small-caps;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.5rem;
+        display: flex; align-items: center;
+        width: 45%;
+    }
+
+	header nav {
+		padding: 0;
+		align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: end;
+        width: 65%;
+	}
+    header nav ul li a{
+        margin: 5px;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+	
+	header label {
+		display: none;
+	}
+	
+	#menucontrol+nav, #menucontrol:checked+nav{
+		display: flex;
+	}
+	
+	header nav ul a {
+		margin-top: 0;
+	}
+	
+	header nav>a {
+		padding: 10px 20px;	
+	}
+    #sec-3 div.container .figs figure.fig-3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sec-7 div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #sec-7 div.container article {
+        width: 80%;
+        padding-right: 70px;
+    }
+    #sec-7 div.container form {
+        width: 35%;
+    }
+    #sec-9 footer {
+        font-size: 1rem;
+        font-weight: 450;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.container {
+		width: 1140px;
+	}
+    #sec-3 div.container .figs {
+        display: flex;
+        flex-direction: row;
+    }
+    #sec-3 div.container .figs figure {
+        width: 32%;
+    }
+    #sec-3 div.container .figs figure.fig-3{
+        margin-left: 0;
+        margin-right: 0;
+        width: 32%;
+    }
+    #sec-4 div.container .figs-sec-4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    #sec-4 div.container .figs-sec-4 figure {
+        width: 24%;
+    }
+    #sec-3 div.container .figs {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #sec-3 div.container figure {
+		display: block; 
+	}
+	#sec-3 div.container figure img {
+		width: 100%;
+	}
+    #sec-6 div.container .cont {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    #sec-6 div.container .cont img {
+        width: 48%;
+        
+    }
+    #sec-6 div.container .cont aside {
+        width: 48%;
+        padding-left: 50px;
+    }
+    #sec-6 div.container .cont aside article {
+        text-align: start;
+    }
+}
+@media (min-width: 1400px) {  
+	.container {
+		width: 1340px;
+	}
+    #sec-7 div.container form {
+        width: 40%;
+    }
+}
